@@ -1,0 +1,21 @@
+@startuml dino
+class Cactus 
+class Dinosaurio{
+    +MoverDerecha()
+    +MoverIzquierda()
+    +Disparar()
+}
+class Colisionable
+class Jugador
+class puntuacion
+class Juego
+
+
+
+Jugador "1" o-- "1" Dinosaurio
+Jugador "1" *-- "1" Puntuacion
+Juego "1" *-- "1" Jugador
+Cactus --> Colisionable
+
+
+@enduml
